@@ -37,20 +37,20 @@ function animate() {
   // let video play
   tl.addLabel('start', 0)
     .to('#container', 0.5, { autoAlpha: 1 }, 'start+=0.5')
-    .staggerTo(['#copy1', '#copy2', '#copy3'], 1, { autoAlpha: 1, ease: "expo.out" }, 0.1, 'start+=2')
-    .staggerFrom(['#copy1', '#copy2', '#copy3'], 1, { y: '+=250', ease: "expo.out" }, 0.1, 'start+=2')
-    .to('.copyF1', 0.5, {alpha: 0, delay: 1})
-    .staggerTo(['#copy4', '#copy5', '#copy6'], 1, { autoAlpha: 1, ease: "expo.out" }, 0.1, 'start+=5.5')
-    .staggerFrom(['#copy4', '#copy5', '#copy6'], 1, { y: '+=200', ease: "expo.out" }, 0.1, 'start+=5.5')
+    .staggerTo(['#copy1', '#copy2', '#copy3'], 0.8, { autoAlpha: 1, ease: "expo.out", delay: 0.4 }, 0.1, 'start+=2')
+    .staggerFrom(['#copy1', '#copy2', '#copy3'], 0.8, { y: '+=250', ease: "expo.out" }, 0.1, 'start+=2')
+    .to('.copyF1', 0.5, {alpha: 0, delay: 2})
+    .staggerTo(['#copy4', '#copy5', '#copy6'], 0.8, { autoAlpha: 1, ease: "expo.out" }, 0.1, 'start+=6.5')
+    .staggerFrom(['#copy4', '#copy5', '#copy6'], 0.8, { y: '+=200', ease: "expo.out" }, 0.1, 'start+=6.5')
     .to('#footer', 0.5, {css: { 'opacity': '0'}, delay: 1.5})
     .to('#footer', 0.1, {css: {'filter': 'brightness(0) invert(1)', delay: 1.5}})
-    .to('#endframe', 1, { top: 0, ease: "expo.out" })
+    .to('#endframe', 1, {top: 0, ease: "expo.out" })
     .to('#footer', 0.5, {css: { 'opacity': '1'}})
     .to('#shine', 0.5, {backgroundPosition: '450px 0px'});
 
     // tl.to('#bkg', 9, { x: '+=50', ease: Power1.easeInOut }, 0)
-    tl.to(['#man'], 9, { transform: "translate3d(7px, 33px, 1px) scale(1.2, 1.2)", ease: Power1.easeInOut }, 0)
-    tl.to(['#bkg'], 9, { transform: "translate3d(12px, 25px, 1px) scale(1.15)", ease: Power1.easeInOut }, 0)
+    tl.to(['#man'], 10, { transform: "translate3d(7px, 33px, 1px) scale(1.2, 1.2)", ease: Power1.easeInOut }, 0)
+    tl.to(['#bkg'], 10, { transform: "translate3d(12px, 25px, 1px) scale(1.15)", ease: Power1.easeInOut }, 0)
 
 }
 
