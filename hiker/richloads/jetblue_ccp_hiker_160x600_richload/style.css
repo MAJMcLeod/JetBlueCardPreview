@@ -56,11 +56,13 @@ div, img {
   visibility: hidden;
 }
 
-#logo {
-  bottom: 3px;
-  right: 3px;
-  width: 114px;
+#footer {
+  bottom: 19px;
+  right: 8px;
+  width: 142px;
   height: auto;
+  z-index: 10;
+  filter: brightness(0) invert(1);
 }
 
 #logo-bar {
@@ -69,7 +71,7 @@ div, img {
   left: 0;
   width: 160px;
   height: 39px;
-  background-color: #0000AA;
+  background-color: #0000aa;
 }
 
 #logo,
@@ -79,17 +81,19 @@ div, img {
 }
 
 #endframe {
-  top: 549px;
+  top: 590px;
   left: 0px;
   width: 160px;
   height: 600px;
   background-color: #ffffff;
   display: block;
   z-index: 10;
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
 }
 
 .fuchsia {
-  color: #FC3388;
+  color: #fc3388;
 }
 
 .extrabold {
@@ -107,13 +111,18 @@ div, img {
 
 #endframe_headline {
   position: absolute;
-  top: 106px;
+  top: 74px;
   left: 10px;
   width: 400px;
   font-size: 23px;
-  line-height: 24.5px;
-  letter-spacing: -0.38px;
+  line-height: 25.3px;
+  letter-spacing: -0.6px;
   font-family: "KlarheitGroteskExtraBold", sans-serif;
+  color: #fff;
+}
+
+#endframe_headline span{
+  color: #00e1ff;
 }
 
 #textWrapper {
@@ -128,23 +137,63 @@ div, img {
 }
 
 #copy2 {
-  position: relative;
-  font-size: 47.5px;
-  letter-spacing: -0.025em;
-  line-height: 46.5px;
-  color: #FFFFFF;
-  font-family: "KlarheitGroteskExtraBold", sans-serif;
-  text-align: center;
+  top: -27px;
+  left: 12px;
+  position: absolute;
+  transform: scale(0.5);
 }
 
-#copy1, #copy3 {
-  position: relative;
-  font-size: 19px;
-  letter-spacing: -0.025em;
-  line-height: 18px;
-  color: #FFFFFF;
+#copy3 {
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  transform: scale(0.5);
+}
+
+#copy1 {
+  position: absolute;
+  left: 12px;
+  top: -44px;
+  transform: scale(0.5);
+}
+
+#copy4 {
+  position: absolute;
+  top: 47px;
+  left: 12px;
+  transform: scale(0.5);
+}
+
+#copy5 {
+  position: absolute;
+  left: 16px;
+  top: 68px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
   font-family: "KlarheitGroteskExtraBold", sans-serif;
-  text-align: center;
+}
+
+#copy6 {
+  position: absolute;
+  left: 12px;
+  top: 88px;
+  font-size: 58px;
+  letter-spacing: -0.035em;
+  line-height: 78px;
+  color: #ffffff;
+  font-family: "KlarheitGroteskExtraBold", sans-serif;
+}
+
+#copy7 {
+  position: absolute;
+  left: 16px;
+  top: 149px;
+  font-size: 18px;
+  letter-spacing: -0.012em;
+  line-height: 32px;
+  color: #ffffff;
+  font-family: "KlarheitGroteskExtraBold", sans-serif;
 }
 
 #man,
@@ -165,11 +214,29 @@ div, img {
 }
 
 #card {
+  top: 0;
+  left: 0;
+  min-width: 160px;
+  min-height: 600px;
+  background-image: url(./images/card.png);
+  background-size: contain;
   position: absolute;
-  width: 144.5px;
-  height: auto;
-  top: 356.5px;
-  left: 10px;
+}
+
+#shine {
+  width: 160px;
+  height: 600px;
+  background-image: url(./images/shine.png);
+  background-size: contain;
+  background-position: -135px 0px;
+  background-repeat: no-repeat;
+  position: absolute;
+  mix-blend-mode: soft-light;
+  -webkit-mask-image: url(./images/mask.png);
+  -webkit-mask-size: 160px 600px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url(./images/mask.png);
 }
 
 #pink-bar-1,
@@ -181,31 +248,30 @@ div, img {
   left: 0;
   width: 160px;
   height: 10px;
-  background-color: #FC3388;
+  background-color: #fc3388;
 }
 
-#pink-bar{
+#pink-bar {
   width: 160px;
   height: 10px;
-  background-color: #FC3388;
+  background-color: #fc3388;
 }
 
 #terms {
-  top: 450px;
-  left: 10px;
+  top: 407px;
+  left: 15px;
   font-size: 9px;
-  color: #0000AA;
+  color: #fff;
   font-family: "KlarheitGroteskBook", sans-serif;
-  text-shadow: 0 0 3px white, 0 0 4px white, 0 0 5px white;
 }
 
 #cta {
   text-align: center;
   transform-origin: center;
   border-radius: 4px;
-  top: 270.5px;
+  top: 220.5px;
   left: 10px;
-  background: #0000AA;
+  background: #fc3388;
   color: #fff;
   font-family: "KlarheitGroteskSemiBold", sans-serif;
   font-size: 13.5px;
@@ -216,7 +282,6 @@ div, img {
   align-items: center;
 }
 
-
 #test {
   width: 160px;
   height: auto;
@@ -226,6 +291,7 @@ div, img {
   z-index: 1000;
   opacity: 0.3;
 }
+
 
 
 

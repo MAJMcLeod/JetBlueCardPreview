@@ -57,11 +57,12 @@ img {
   visibility: hidden;
 }
 
-#logo {
+#footer {
   bottom: 19px;
   right: 8px;
   width: 142px;
   height: auto;
+  z-index: 10;
 }
 
 #logo-bar {
@@ -87,6 +88,8 @@ img {
   background-color: #ffffff;
   display: block;
   z-index: 10;
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
 }
 
 .fuchsia {
@@ -108,13 +111,18 @@ img {
 
 #endframe_headline {
   position: absolute;
-  top: 106px;
+  top: 74px;
   left: 10px;
   width: 400px;
   font-size: 23px;
-  line-height: 24.5px;
-  letter-spacing: -0.38px;
+  line-height: 25.3px;
+  letter-spacing: -0.6px;
   font-family: "KlarheitGroteskExtraBold", sans-serif;
+  color: #fff;
+}
+
+#endframe_headline span{
+  color: #00e1ff;
 }
 
 #textWrapper {
@@ -156,14 +164,53 @@ img {
   transform: scale(0.5);
 }
 
+#copy5 {
+  position: absolute;
+  left: 16px;
+  top: 68px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  font-family: "KlarheitGroteskExtraBold", sans-serif;
+}
+
+#copy6 {
+  position: absolute;
+  left: 12px;
+  top: 88px;
+  font-size: 58px;
+  letter-spacing: -0.035em;
+  line-height: 78px;
+  color: #ffffff;
+  font-family: "KlarheitGroteskExtraBold", sans-serif;
+}
+
+#copy7 {
+  position: absolute;
+  left: 16px;
+  top: 149px;
+  font-size: 18px;
+  letter-spacing: -0.012em;
+  line-height: 32px;
+  color: #ffffff;
+  font-family: "KlarheitGroteskExtraBold", sans-serif;
+}
+
 #man,
-#sand,
 #sea,
 #sky {
   position: absolute;
   width: 160px;
   height: auto;
   top: -16px;
+  right: 0px;
+}
+
+#sand{
+  position: absolute;
+  width: 160px;
+  height: auto;
+  top: -36px;
   right: 0px;
 }
 
@@ -176,11 +223,29 @@ img {
 }
 
 #card {
+  top: 0;
+  left: 0;
+  min-width: 160px;
+  min-height: 600px;
+  background-image: url(./images/card.png);
+  background-size: contain;
   position: absolute;
-  width: 144.5px;
-  height: auto;
-  top: 356.5px;
-  left: 10px;
+}
+
+#shine {
+  width: 160px;
+  height: 600px;
+  background-image: url(./images/shine.png);
+  background-size: contain;
+  background-position: -135px 0px;
+  background-repeat: no-repeat;
+  position: absolute;
+  mix-blend-mode: soft-light;
+  -webkit-mask-image: url(./images/mask.png);
+  -webkit-mask-size: 160px 600px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url(./images/mask.png);
 }
 
 #pink-bar-1,
@@ -202,21 +267,20 @@ img {
 }
 
 #terms {
-  top: 450px;
-  left: 10px;
+  top: 407px;
+  left: 15px;
   font-size: 9px;
-  color: #0000aa;
+  color: #fff;
   font-family: "KlarheitGroteskBook", sans-serif;
-  text-shadow: 0 0 3px white, 0 0 4px white, 0 0 5px white;
 }
 
 #cta {
   text-align: center;
   transform-origin: center;
   border-radius: 4px;
-  top: 270.5px;
+  top: 220.5px;
   left: 10px;
-  background: #0000aa;
+  background: #fc3388;
   color: #fff;
   font-family: "KlarheitGroteskSemiBold", sans-serif;
   font-size: 13.5px;

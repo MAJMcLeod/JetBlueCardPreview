@@ -39,14 +39,18 @@ function animate() {
     .to('#container', 0.5, { autoAlpha: 1 }, 'start+=0.5')
     .staggerTo(['#copy1', '#copy2', '#copy3'], 1, { autoAlpha: 1, ease: "expo.out" }, 0.3, 'start+=2.5')
     .staggerFrom(['#copy1', '#copy2', '#copy3'], 1, { y: '+=200', ease: "expo.out" }, 0.3, 'start+=2.5')
-    .to(['#endframe-right'], 0.5, { left: 128, ease: "expo.out" }, '+=3')
-    .to(['#endframe_headline', '#terms'], 0.5, { autoAlpha: 1 }, '-=0.5')
+    .to('.copyF1', 0.5, {alpha: 0, delay: 2})
+    .staggerTo(['#copy4', '#copy5', '#copy6'], 1, { autoAlpha: 1, ease: "expo.out" }, 0.1, 'start+=6.5')
+    .staggerFrom(['#copy4', '#copy5', '#copy6'], 1, { y: '+=200', ease: "expo.out" }, 0.1, 'start+=6.5')
+    .to('#footer', 0.5, {css: { 'opacity': '0'}, delay: 1.5})
+    .to('#footer', 0.1, {css: {'filter': 'brightness(0) invert(1)', delay: 1.5}})
+    .to('#endframe', 1, { top: 0, ease: "expo.out" })
+    .to('#footer', 0.5, {css: { 'opacity': '1'}})
+    .to('#shine', 0.5, {backgroundPosition: '450px 0px'});
 
-    tl.to(['#sand, #man'], 7, { transform: "translate3d(50px, 10px, 1px) scale(1.05)", ease: Power1.easeInOut }, 0)
-    // tl.to(['#sand', '#man'], 3, { transform: "translate3d(190px, 10px, 1px) scale(1.05)", ease: Power1.easeInOut }, 2)
-    // tl.to(['#sky'], 3, { transform: "translate3d(50px, 15px, 1px)", ease: Power1.easeInOut }, 2)
-    tl.to(['#sea'], 7, { transform: "translate3d(0px, 10px, 1px) scale(1.15)", ease: Power1.easeInOut }, 0)
-    tl.to(['#sky'], 7, { transform: "translate3d(10px, 0px, 1px) scale(1.3)", ease: Power1.easeInOut }, 0)
+    tl.to(['#sand, #man'], 9, { transform: "translate3d(65px, 7px, 1px) scale(1.05)", ease: Power1.easeInOut }, 0)
+    tl.to(['#sea'], 9, { transform: "translate3d(0px, 10px, 1px) scale(1.15)", ease: Power1.easeInOut }, 0)
+    tl.to(['#sky'], 9, { transform: "translate3d(10px, 0px, 1px) scale(1.3)", ease: Power1.easeInOut }, 0)
 }
 
 function setRollover() {
