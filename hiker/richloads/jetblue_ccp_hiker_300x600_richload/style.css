@@ -248,12 +248,19 @@ div, img {
   font-family: "KlarheitGroteskExtraBold", sans-serif;
 }
 
-#man,
 #bkg {
   position: absolute;
   width: 300px;
   height: auto;
   top: 0px;
+  right: 0px;
+}
+
+#man{
+  position: absolute;
+  width: 300px;
+  height: auto;
+  top: 10px;
   right: 0px;
 }
 
