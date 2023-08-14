@@ -44,9 +44,9 @@ function animate() {
     .staggerFrom(['#copy4', '#copy5', '#copy6'], 1, { y: '+=200', ease: "expo.out" }, 0.1, 'start+=6.5')
     .to('#footer', 0.5, {css: { 'opacity': '0'}, delay: 1.5})
     .to('#footer', 0.1, {css: {'filter': 'brightness(0) invert(1)', delay: 1.5}})
-    .to('#endframe', 1, { top: 0, ease: "expo.out" })
+    .to('#endframe', 1, { left: 0, ease: "expo.out" })
     .to('#footer', 0.5, {css: { 'opacity': '1'}})
-    .to('#shine', 0.5, {backgroundPosition: '450px 0px'});
+    .to('#shine', 0.5, {backgroundPosition: '98px 0px'});
 
     tl.to(['#sand, #man'], 9, { transform: "translate3d(65px, 7px, 1px) scale(1.05)", ease: Power1.easeInOut }, 0)
     tl.to(['#sea'], 9, { transform: "translate3d(0px, 10px, 1px) scale(1.15)", ease: Power1.easeInOut }, 0)

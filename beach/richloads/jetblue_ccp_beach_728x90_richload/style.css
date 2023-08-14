@@ -56,7 +56,7 @@ div, img {
   visibility: hidden;
 }
 
-#logo {
+#footer {
   top: 32px;
   left: 590px;
   width: auto;
@@ -73,30 +73,10 @@ div, img {
   background-color: #0000AA;
 }
 
-#logo,
+#footer,
 #logo-bar,
 #pink-bar-1 {
   z-index: 15;
-}
-
-#endframe-left{
-  top: 0px;
-  left: -192px;
-  width: 320px;
-  height: 90px;
-  background-color: #ffffff;
-  display: block;
-  z-index: 10;
-}
-
-#endframe-right{
-  top: 0px;
-  left: 692px;
-  width: 720px;
-  height: 90px;
-  background-color: #ffffff;
-  display: block;
-  z-index: 10;
 }
 
 .fuchsia {
@@ -116,14 +96,28 @@ div, img {
   filter: blur(5px);
 }
 
+#endframe{
+  top: 0px;
+    left: -721px;
+    background-image: url(./images/bg.jpg);
+    background-size: contain;
+    width: 728px;
+    height: 90px;
+}
+
 #endframe_headline {
-  top: 18px;
-  left: 75px;
+  top: 19px;
+  left: 142px;
   width: 389px;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 25px;
   letter-spacing: -0.35px;
   font-family: "KlarheitGroteskExtraBold", sans-serif;
+  color: #fff;
+}
+
+#endframe_headline span {
+  color: #00e1ff;
 }
 
 #copy2 {
@@ -231,16 +225,32 @@ div, img {
 
 #card {
   position: absolute;
-  width: 104px;
-  height: auto;
-  top: 11px;
-  left: 206px;
+  width: 728px;
+  height: 90px;
+  background-image: url(./images/card.png);
+  background-size: cover;
+}
+
+#shine{
+  width: 728px;
+  height: 90px;
+  background-image: url(./images/shine.png);
+  background-size: contain;
+  background-position: -82px 0px;
+  background-repeat: no-repeat;
+  position: absolute;
+  mix-blend-mode: soft-light;
+  -webkit-mask-image: url(./images/mask.png);
+  -webkit-mask-size: 728px 90px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url(./images/mask.png);
 }
 
 #pink-bar {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 721px;
   width: 8px;
   height: 90px;
   background-color: #FC3388;
@@ -264,12 +274,11 @@ div, img {
 }
 
 #terms {
-  top: 74px;
-  left: 207px;
+  top: 77px;
+  left: 67px;
   font-size: 8px;
-  color: #0000AA;
+  color: #fff;
   font-family: "KlarheitGroteskBook", sans-serif;
-  /* text-shadow: 0 0 3px white, 0 0 4px white, 0 0 5px white; */
 }
 
 #cta {
@@ -277,8 +286,8 @@ div, img {
   transform-origin: center;
   border-radius: 4px;
   top: 28px;
-  left: 426px;
-  background: #0000AA;
+  left: 474px;
+  background: #FC3388;
   color: #fff;
   font-family: "KlarheitGroteskSemiBold", sans-serif;
   font-size: 12px;
