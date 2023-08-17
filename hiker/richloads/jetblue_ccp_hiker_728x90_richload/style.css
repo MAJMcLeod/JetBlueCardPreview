@@ -137,8 +137,8 @@ div, img {
 
 #copy1 {
   position: absolute;
-  left: 75px;
-  top: 38px;
+  left: 109px;
+  top: 8px;
   transform: scale(0.405);
 }
 
@@ -199,7 +199,7 @@ div, img {
 }
 
 #man {
-  left: -65px;
+  left: -75px;
   transform-origin: 66% 25%;
 }
 

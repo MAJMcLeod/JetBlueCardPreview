@@ -49,7 +49,7 @@ function animate() {
     .to('#footer', 0.5, {css: { 'opacity': '1'}})
     .to('#shine', 0.5, {backgroundPosition: '140px 0px'});
   
-    tl.to(['#man', '#sand'], 9, { transform: "translate3d(0px, -15px, 1px) scale(1.2)", ease: Power1.easeInOut }, 0)
+    tl.to(['#man', '#sand'], 9, { transform: "translate3d(0px, -15px, 1px) scale(1.1)", ease: Power1.easeInOut }, 0)
     tl.to(['#sea'], 9, { transform: "translate3d(0px, 2px, 1px) scale(1.15)", ease: Power1.easeInOut }, 0)
     tl.to(['#sky'], 9, { transform: "translate3d(-5px, 0px, 1px) scale(1.1)", ease: Power1.easeInOut }, 0)
 

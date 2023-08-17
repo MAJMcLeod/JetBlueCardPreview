@@ -48,7 +48,7 @@ function animate() {
     .to('#footer', 0.5, {css: { 'opacity': '1'}})
     .to('#shine', 0.5, {backgroundPosition: '98px 0px'});
 
-    tl.to(['#man'], 9, { transform: "translate3d(47px, 0, 1px) scale(1.25)", ease: Power1.easeInOut }, 0)
+    tl.to(['#man'], 9, { transform: "translate3d(50px, 0, 1px) scale(1.25)", ease: Power1.easeInOut }, 0)
     tl.to(['#bkg'], 9, { transform: "translate3d(-25px, 58px, 1px) scale(1.1)", ease: Power1.easeInOut }, 0)
 }
 

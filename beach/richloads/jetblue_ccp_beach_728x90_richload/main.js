@@ -48,7 +48,7 @@ function animate() {
     .to('#footer', 0.5, {css: { 'opacity': '1'}})
     .to('#shine', 0.5, {backgroundPosition: '98px 0px'});
 
-    tl.to(['#sand, #man'], 9, { transform: "translate3d(65px, 7px, 1px) scale(1.05)", ease: Power1.easeInOut }, 0)
+    tl.to(['#sand, #man'], 9, { transform: "translate3d(40px, 7px, 1px) scale(1.05)", ease: Power1.easeInOut }, 0)
     tl.to(['#sea'], 9, { transform: "translate3d(0px, 10px, 1px) scale(1.15)", ease: Power1.easeInOut }, 0)
     tl.to(['#sky'], 9, { transform: "translate3d(10px, 0px, 1px) scale(1.3)", ease: Power1.easeInOut }, 0)
 }

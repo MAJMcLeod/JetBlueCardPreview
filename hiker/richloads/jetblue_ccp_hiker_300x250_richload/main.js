@@ -50,7 +50,7 @@ function animate() {
 
     // tl.to('#bkg', 9, { x: '+=50', ease: Power1.easeInOut }, 0)
     tl.to(['#man'], 10, { transform: "translate3d(7px, 33px, 1px) scale(1.2, 1.2)", ease: Power1.easeInOut }, 0)
-    tl.to(['#bkg'], 10, { transform: "translate3d(12px, 25px, 1px) scale(1.15)", ease: Power1.easeInOut }, 0)
+    tl.to(['#bkg'], 10, { transform: "translate3d(12px, 50px, 1px) scale(1.15)", ease: Power1.easeInOut }, 0)
 
 }
 
