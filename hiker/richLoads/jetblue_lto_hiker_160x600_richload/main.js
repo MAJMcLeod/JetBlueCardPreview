@@ -27,14 +27,6 @@ myFT.on('instantads',function(){
 init()
 
 function animate() {
-  const cardBounce = CustomEase.create("custom", "M0,0,C0,0,0.05,0.228,0.09,0.373,0.12,0.484,0.139,0.547,0.18,0.654,0.211,0.737,0.235,0.785,0.275,0.864,0.291,0.896,0.303,0.915,0.325,0.944,0.344,0.97,0.356,0.989,0.38,1.009,0.413,1.039,0.441,1.18,0.48,1.08,0.496,1.089,0.51,1.091,0.53,1.095,0.552,1.099,0.582,1.1,0.6,1.1,0.716,1.1,0.716,1.064,0.8,1.024,0.865,0.992,1,1,1,1");
-
-  // tl.set(["#man", "#bkg"], { force3D: false });
-  tl.set("#container", { autoAlpha: 0, force3D: true });
-  // tl.set("#cta", { autoAlpha: 0, force3D: true, rotation: .001 });
-  // tl.set("#card", { autoAlpha: 0, scale: 0.3 });
-  // tl.set(['#terms'], { autoAlpha: 0})
-
   // let video play
   tl.addLabel('start', 0)
     .to('#container', 0.5, { autoAlpha: 1 }, 'start+=0.5')
